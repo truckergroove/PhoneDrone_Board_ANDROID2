@@ -1,0 +1,434 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    
+   <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <CheckBox
+            android:id="@+id/autopilot_check_box"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="17dp"
+            android:text="AUTOPILOT" />
+
+        <CheckBox
+            android:id="@+id/updateValues_Checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:text="UPDATE VALUES" />
+
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" >
+
+                    <TextView
+                        android:layout_width="160dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/label_RUDDER"
+                        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" >
+
+                    <TextView
+                        android:layout_width="156dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:text="@string/label_ELEVATOR"
+                        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" >
+
+                    <SeekBar
+                        android:id="@+id/RUDD_seek_bar"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" >
+
+                    <EditText
+                        android:id="@+id/servo3_editText"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ems="10"
+			            android:focusable="false"
+			            android:focusableInTouchMode="false"
+			            android:inputType="number" >
+        			</EditText>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" >
+
+                    <EditText
+                        android:id="@+id/servo2_editText"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+			            android:layout_weight="1"
+			            android:ems="10"
+			            android:focusable="false"
+			            android:focusableInTouchMode="false"
+			            android:inputType="number" >
+       				</EditText>
+                    
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" >
+
+                    <SeekBar
+                        android:id="@+id/ELEV_seek_bar"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" >
+
+                    <SeekBar
+                        android:id="@+id/incoming3_seek_bar"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" >
+
+                    <EditText
+            			android:id="@+id/incoming3_editText"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+			            android:ems="10"
+			            android:focusable="false"
+			            android:focusableInTouchMode="false"
+			            android:inputType="number" >
+			            <requestFocus />
+			        </EditText>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" >
+
+                    <EditText
+            			android:id="@+id/incoming2_editText"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+			            android:ems="10"
+			            android:focusable="false"
+			            android:focusableInTouchMode="false"
+			            android:inputType="number" >
+			            <requestFocus />
+			        </EditText>
+                    
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" >
+
+                    <SeekBar
+                        android:id="@+id/incoming2_seek_bar"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" >
+
+                    <TextView
+                        android:layout_width="154dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/label_THROTTLE"
+                        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" >
+
+                    <TextView
+                        android:layout_width="164dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:text="@string/label_AILERON"
+                        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" >
+
+                    <SeekBar
+                        android:id="@+id/THRO_seek_bar"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" >
+
+                 	<EditText
+                        android:id="@+id/servo4_editText"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ems="10"
+			            android:focusable="false"
+			            android:focusableInTouchMode="false"
+			            android:inputType="number" >
+        			</EditText>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" >
+
+                    <EditText
+                        android:id="@+id/servo1_editText"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ems="10"
+			            android:focusable="false"
+			            android:focusableInTouchMode="false"
+			            android:inputType="number" >
+        			</EditText>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" >
+
+                    <SeekBar
+                        android:id="@+id/AILE_seek_bar"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" >
+
+                    <SeekBar
+                        android:id="@+id/incoming4_seek_bar"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" >
+
+                    <EditText
+            			android:id="@+id/incoming4_editText"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+			            android:ems="10"
+			            android:focusable="false"
+			            android:focusableInTouchMode="false"
+			            android:inputType="number" >
+			            <requestFocus />
+			        </EditText>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" >
+
+                    <EditText
+           				android:id="@+id/incoming1_editText"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+			            android:ems="10"
+			            android:focusable="false"
+			            android:focusableInTouchMode="false"
+			            android:inputType="number" >
+            		<requestFocus />
+        			</EditText>
+                    
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" >
+
+                    <SeekBar
+                        android:id="@+id/incoming1_seek_bar"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="196dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/label_TEMPERATURE"
+                        android:textAppearance="?android:attr/textAppearanceLarge" />
+                    
+            
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <EditText
+                    android:id="@+id/Temperature_editText"
+                    android:layout_width="174dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+			        android:focusable="false"
+			        android:focusableInTouchMode="false"
+			        android:inputType="number" >
+        		</EditText>
+                
+                
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+      
+                <TextView
+                        android:layout_width="196dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/label_AIRSPEED"
+                        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <EditText
+                    android:id="@+id/Airspeed_editText"
+                    android:layout_width="174dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+			        android:focusable="false"
+			        android:focusableInTouchMode="false"
+			        android:inputType="number" >
+        		</EditText>
+                
+                
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+    
+    
+    
+</LinearLayout>

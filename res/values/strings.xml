@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Phone Drone Version 01 </string>
+    <string name="label_AILERON">AILERON</string>
+    <string name="label_ELEVATOR">ELEVATOR</string>
+    <string name="label_RUDDER">RUDDER</string>
+    <string name="label_THROTTLE">THROTTLE</string>
+    <string name="label_TEMPERATURE">TEMPERATURE [C°]</string>
+    <string name="label_AIRSPEED">AIRSPEED [m/s]</string>
+</resources>
